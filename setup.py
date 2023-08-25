@@ -46,6 +46,8 @@ setup(
     author="Tom Christie",
     author_email="tom@tomchristie.com",
     packages=get_packages("broadcaster"),
+    package_data={"broadcaster": ["py.typed"]},
+    include_package_data=True,
     data_files=[("", ["LICENSE.md"])],
     extras_require={
         "redis": ["asyncio-redis"],
